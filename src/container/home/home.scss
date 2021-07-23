@@ -6,6 +6,7 @@
   align-items: center;
   flex-direction: column;
   background: linear-gradient(to bottom, rgb(0, 208, 223), rgb(255, 255, 255));
+  z-index: 1;
 
   .nav-container {
     width: 70%;
@@ -40,6 +41,7 @@
     bottom: -16%;
     transform: translateX(-50%);
     user-select: none;
+    z-index: 5;
     
   }
 
@@ -48,6 +50,7 @@
     height: 110px;
     opacity: 50%;
     user-select: none;
+    z-index: 10;
 
     &:hover {
       opacity: 100%;
