@@ -1,0 +1,162 @@
+.contact-container {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #00d0df;
+  border: 5px solid #c8e8eb;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  position: relative;
+
+  .start-project {
+    width: 70%;
+    height: 150px;
+    background: rgb(34, 34, 34);
+    color: white;
+    border-radius: 12px;
+    position: absolute;
+    top: -75px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & > h2 {
+      letter-spacing: 4px;
+    }
+
+    & > p {
+      letter-spacing: 2px;
+    }
+
+    & > a {
+      letter-spacing: 1px;
+      text-decoration: none;
+      color: white;
+      border: 2px solid #ffffff;
+      border-radius: 34px;
+      padding: 10px 20px;
+
+      &:hover {
+        background: rgb(0, 208, 223);
+        border: 2px solid rgb(0, 208, 223);
+        color: black;
+      }
+
+      & > h3 {
+        font-size: 15px;
+        font-weight: lighter;
+      }
+    }
+  }
+
+  .contact {
+    width: 70vw;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 10%;
+
+    .contact-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+      margin-top: -10px;
+
+      & > p {
+        font-size: 24px;
+        font-weight: lighter;
+      }
+    }
+
+    .contact-icons {
+      margin-top: -20px;
+
+      & > a {
+        text-decoration: none;
+        color: black;
+        
+        &:hover {
+          opacity: 60%;
+        }
+      }
+    }
+    
+    .last-text {
+      display: flex;
+
+      .copy {
+        font-size: 20px;
+        margin-right: 5px;
+      }
+
+      .name {
+        font-size: 18px;
+      }
+
+      .heart {
+        font-size: 18px;
+        margin-left: 5px;
+        color: red;
+        
+      }
+    }
+    
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .contact-container .start-project {
+    width: 90%;
+    flex-direction: column;
+
+    h2 {
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    a > h3 {
+      font-size: 12px;
+    }
+  }
+
+  .contact-container {
+    height: 50vh;
+
+    .contact .last-text .name {
+      font-size: 15px;
+    }
+
+    .contact .last-text .copy {
+      font-size: 15px;
+    }
+
+    .contact .last-text .heart {
+      font-size: 15px;
+    }
+
+    .contact .contact-text {
+      margin-top: 0px;
+  
+      p {
+        font-size: 16px;
+      }
+
+      .contact-icons {
+        font-size: 15px;
+      }
+    }
+  }
+}

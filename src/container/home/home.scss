@@ -1,0 +1,176 @@
+
+.home-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom, rgb(0, 208, 223), rgb(255, 255, 255));
+
+  .nav-container {
+    width: 70%;
+    height: 80px;
+    border: 5px solid #c8e8eb;
+    border-radius: 12px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 20px;
+    z-index: 20;
+    
+
+    img {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      left: 5%;
+      user-select: none;
+    }
+  }
+
+  img.computer {
+    width: 100%;
+    max-width: 110%;
+    max-height: 110%;
+    opacity: 80%;
+    position: absolute;
+    bottom: -16%;
+    transform: translateX(-50%);
+    user-select: none;
+    
+  }
+
+  img.tech-icons {
+    width: 110px;
+    height: 110px;
+    opacity: 50%;
+    user-select: none;
+
+    &:hover {
+      opacity: 100%;
+      transition: opacity ease-out 500ms;
+    }
+  }
+
+  .iconjs {
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    z-index: 10;
+
+    &:hover {
+    animation: rotate ease-out 0.75s 1;
+    }
+  }
+
+  .iconnode {
+    position: absolute;
+    left: 10%;
+    top: 70%;
+    z-index: 10;
+
+    &:hover {
+      animation: rotate ease-out 0.75s 1;
+      }
+  }
+  .iconreact {
+    position: absolute;
+    right: 15%;
+    top: 25%;
+    z-index: 10;
+
+    &:hover {
+      animation: rotate ease-out 0.75s 1;
+      }
+  }
+  .iconcss {
+    position: absolute;
+    right: 10%;
+    top: 70%;
+    z-index: 10;
+
+    &:hover {
+      animation: rotate ease-in-out 0.75s 1;
+      }
+  }
+
+  @keyframes rotate {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(-8deg);}
+    75% {transform: rotate(8deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+  .intro-container {
+    font-size: 26px;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+    #intro {
+      font-family: "Source Code Pro", 'Encode Sans SC', sans-serif;
+      font-size: 18px;
+      margin: 25px;
+    }
+
+    #first-line {
+      display: flex;
+      margin-left: 40px;
+
+      p{
+        margin-left: 10px;
+        font-weight: bold;
+        vertical-align: super;
+        letter-spacing: 2px;
+      }
+    }
+    #second-line {
+      display: flex;
+      margin-left: 40px;
+    }
+    
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .home-container .nav-container {
+    width: 95%;
+      
+  }
+
+  .home-container img.computer {
+    width: 200%;
+    max-width: 200%;
+    bottom: 0%;
+  }
+
+  .home-container .intro-container {
+    font-size: 18px;
+    top: 65%;
+    left: 4px;
+  }
+
+  .home-container img.tech-icons {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: -10vh;
+  }
+
+  .home-container .iconnode {
+    top: 40%;
+    left: 15%;
+  }
+
+  .home-container .iconcss {
+    top: 40%;
+    right: 15%;
+  }
+  
+}
